@@ -10,6 +10,9 @@ Last reconciled: 2026-09-28
 - `origin` -> user fork; `upstream` -> `jackwener/OpenCLI`.
 - Baseline commit: `24136945847afbfad266c6c46a8cd335377f9112`.
 - Baseline package version: OpenCLI 1.8.8.
+- Current `upstream/main` is `24136945847afbfad266c6c46a8cd335377f9112`; this project branch is currently **0 commits behind** upstream and differs only by π project-control commits.
+- Upstream package/CLI version is `1.8.8`; installed CLI is also `1.8.8`.
+- Upstream `1.8.8` carries browser extension `1.0.24`, while the current runtime/staged extension artifact is `1.0.23`; this mismatch is recorded and must be reconciled through a controlled smoke, not by blind mid-experiment replacement.
 - Current `upstream/main` is exactly `24136945847afbfad266c6c46a8cd335377f9112`; the project branch is 3 π-control commits ahead and **0 commits behind** upstream.
 - Upstream package/CLI version is `1.8.8`; installed CLI is also `1.8.8`.
 - Upstream `1.8.8` carries browser extension `1.0.24`, while the currently staged/runtime extension artifact is `1.0.23`; this mismatch is recorded and must be reconciled through a controlled smoke, not by blind mid-experiment replacement.

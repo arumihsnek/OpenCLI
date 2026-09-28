@@ -9,6 +9,12 @@ Make OpenCLI able to maintain ChatGPT Project knowledge safely enough for π boo
 
 ## Required product capabilities
 
+### P-1 — upstream freshness gate
+Before implementing P0/P1/P2, refresh against `upstream/main` and verify the active OpenCLI runtime compatibility tuple (CLI + ChatGPT adapter + browser extension). If upstream already implements or materially changes the target behavior, adapt the mission rather than duplicating it.
+
+Promotion of an updated CLI/extension to the live OpenCLI runtime requires relevant tests plus a bounded authenticated smoke. Repository freshness may be automatic; production runtime replacement is controlled.
+
+
 ### P0 — project knowledge lifecycle
 1. Add a deterministic command to remove a named file/source from one ChatGPT Project, e.g.:
    `opencli chatgpt project-file-remove <name> --id <project>`.

@@ -55,7 +55,23 @@ Never allow concurrent writers to the same worktree regardless of backend.
 
 ## Upstream discipline
 
-This repo is a fork. Keep `upstream/main` available and preserve an upstreamable implementation path.
+This repo is a fork and OpenCLI is web-adaptation infrastructure. **Upstream freshness is an operational requirement, not housekeeping.**
+
+Before each consequential implementation unit:
+1. `git fetch upstream --prune`;
+2. compare the project branch against `upstream/main`;
+3. inspect new upstream changes touching ChatGPT/browser transport, adapters, selectors, daemon/native host or extension;
+4. rebase/refresh the implementation base when upstream has moved, unless a concrete conflict requires an explicit bounded decision.
+
+Keep the product delta small and upstreamable. Do not accumulate a long-lived private fork of web selectors or transport behavior when upstream already carries the fix.
+
+Treat these as one compatibility surface:
+- OpenCLI CLI/package version;
+- ChatGPT adapter code;
+- browser daemon/native-host transport;
+- browser extension version.
+
+Do **not** blindly auto-update the production runtime. Stage the upstream update, run relevant adapter/unit tests plus a bounded authenticated smoke, then promote a documented compatible CLI/extension pair. Never change the live OpenCLI runtime in the middle of an unrelated evidence run unless that change is the explicitly tested variable.
 
 Project-control files under `.pi/` and this bootstrap are local project authority; do not include them in an upstream PR unless upstream explicitly requests them. When implementation is ready, construct a clean upstream branch/PR containing only product code/tests/docs relevant to OpenCLI.
 
