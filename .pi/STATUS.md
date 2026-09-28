@@ -15,7 +15,7 @@ Last reconciled: 2026-09-28
 - Existing `project-file-add` uploads and verifies appearance; it does not implement replace semantics.
 - `ask/send` currently expose image attachments, not arbitrary document `--file` attachments.
 - Production installed OpenCLI remains untouched.
-- Multi-Projects post-sync readiness is currently not yet closed; real Jefa activation remains blocked by that gate.
+- Multi-Projects post-sync readiness is currently **0/3 after a material R3 hydration/readiness failure**; real Jefa activation remains blocked until the π-core robustness battery is durably clean.
 
 ## Next
 
