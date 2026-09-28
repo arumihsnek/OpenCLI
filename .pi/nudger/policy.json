@@ -1,0 +1,35 @@
+{
+  "max_cycles": 0,
+  "sample_seconds": 15,
+  "observation_seconds": 90,
+  "cdp_port": 9223,
+  "owned_worker_roots": [
+    "/home/ubuntu/code/OpenCLI"
+  ],
+  "durable_progress_paths": [
+    "/home/ubuntu/code/OpenCLI/.pi",
+    "/home/ubuntu/code/OpenCLI/clis/chatgpt"
+  ],
+  "phase": "project-file-lifecycle",
+  "project_id": "opencli",
+  "project_root": "/home/ubuntu/code/OpenCLI",
+  "conductor_role": "jefa_de_obra",
+  "conductor_cid": "6abaab6d-dc38-83ed-ada4-8f14f0aafc4e",
+  "conductor_url": "https://chatgpt.com/g/g-p-6ab83915ed0481919d8a3e2d060abad0-p-jefa-de-obra/c/6abaab6d-dc38-83ed-ada4-8f14f0aafc4e",
+  "conductor_project": "π · Jefa de Obra",
+  "private_architect_operational_target": false,
+  "private_architect_cid_stored": false,
+  "current_workstream": "project_file_lifecycle",
+  "goal_path": "/home/ubuntu/code/OpenCLI/.pi/GOAL.md",
+  "goal_done_path": "/home/ubuntu/code/OpenCLI/.pi/GOAL_DONE.md",
+  "conductor_generation": 1,
+  "conductor_binding_path": "/home/ubuntu/code/OpenCLI/.pi/JEFA-BINDING.md",
+  "review_gate_path": "/home/ubuntu/code/OpenCLI/.pi/HUMAN_GATE.md",
+  "runtime_state_path": "/home/ubuntu/code/OpenCLI/.pi/nudger/state.json",
+  "runtime_logs_path": "/home/ubuntu/code/OpenCLI/.pi/nudger/logs",
+  "runtime_stop_path": "/home/ubuntu/code/OpenCLI/.pi/nudger/STOP",
+  "runtime_lock_path": "/home/ubuntu/code/OpenCLI/.pi/nudger/instance.lock",
+  "stream_question_stale_windows": 2,
+  "stream_dependency_stale_windows": 7,
+  "stream_unexplained_stale_windows": 7
+}

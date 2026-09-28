@@ -7,8 +7,8 @@ State: CANDIDATE
 
 ## Active binding
 
-- conversation_id: `PENDING`
-- conversation_url: `PENDING`
+- conversation_id: `6abaab6d-dc38-83ed-ada4-8f14f0aafc4e`
+- conversation_url: `https://chatgpt.com/g/g-p-6ab83915ed0481919d8a3e2d060abad0-p-jefa-de-obra/c/6abaab6d-dc38-83ed-ada4-8f14f0aafc4e`
 - project: `π · Jefa de Obra`
 - project_id: `opencli`
 - authority: no operational authority until this file is explicitly transitioned to ACTIVE
