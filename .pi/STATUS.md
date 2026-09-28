@@ -1,6 +1,6 @@
 # STATUS — OpenCLI project file lifecycle
 
-State: **BOOTSTRAPPED / GEN-1 CANDIDATE RETIRED / GEN-2 PENDING**
+State: **BOOTSTRAPPED / GEN-2 CANDIDATE INERT / ACTIVATION BLOCKED**
 Last reconciled: 2026-09-28
 
 ## Current truth
@@ -44,3 +44,14 @@ The unexpected commit `87cc0592` is preserved because its content was correct an
 OpenCLI is expected to change as supported websites change. Before each implementation unit the Jefa must fetch/compare upstream and keep this fork close to `upstream/main`. A stale private adapter is a defect.
 
 Runtime updates are intentionally controlled rather than blindly automatic: validate the upstream CLI/adapter/extension tuple with tests and an authenticated disposable smoke, then promote it. Keep a rollback artifact/version available for the currently working tuple.
+
+
+## Generation-2 inert candidate — 2026-09-28
+
+- CID: `6abaafc5-2374-83eb-89ac-f3d49b190c41`
+- state: CANDIDATE / zero authority
+- bootstrap mode: no tools, no repo read, no workers
+- binding generation: 2
+- Nudger policy points at generation 2 but is not running and must fail `binding_not_active`.
+
+Activation is blocked by π DogFood D54: shared Terminal MCP sessions do not yet enforce project/session mutation authority.

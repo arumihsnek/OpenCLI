@@ -2,34 +2,31 @@
 
 Date: 2026-09-28
 Role: Jefa de Obra
-Binding generation: 1
-State: RETIRED
+Binding generation: 2
+State: CANDIDATE
 
 ## Active binding
 
-- conversation_id: `6abaab6d-dc38-83ed-ada4-8f14f0aafc4e`
-- conversation_url: `https://chatgpt.com/g/g-p-6ab83915ed0481919d8a3e2d060abad0-p-jefa-de-obra/c/6abaab6d-dc38-83ed-ada4-8f14f0aafc4e`
+- conversation_id: `6abaafc5-2374-83eb-89ac-f3d49b190c41`
+- conversation_url: `https://chatgpt.com/g/g-p-6ab83915ed0481919d8a3e2d060abad0-p-jefa-de-obra/c/6abaafc5-2374-83eb-89ac-f3d49b190c41`
 - project: `π · Jefa de Obra`
 - project_id: `opencli`
-- authority: RETIRED / zero operational authority
+- authority: no operational authority until this file is explicitly transitioned to ACTIVE
+
+## Retired bindings
+
+- generation 1 conversation_id: `6abaab6d-dc38-83ed-ada4-8f14f0aafc4e`
+  - state: RETIRED
+  - reason: DF-001 / D54 exposed shared-Terminal session authority leakage during candidate bootstrap; exact ChatGPT actor attribution remained ambiguous.
 
 ## Invariant
 
 A responsive candidate chat is not an active conductor.
 
 Before ACTIVE:
-- read-only bootstrap only;
+- no tool use by the candidate;
+- no repo/runtime mutation;
 - no worker dispatch;
-- no code/repo/runtime mutation;
 - no Nudger process.
 
-Activation is an explicit durable transition performed by the project Arquitecta after the multi-project readiness gate passes.
-
-
-## Retired bindings
-
-- generation 1 conversation_id: `6abaab6d-dc38-83ed-ada4-8f14f0aafc4e`
-  - state: RETIRED
-  - reason: DF-001 demonstrated a candidate-period shared-Terminal authority violation; exact ChatGPT actor attribution remained ambiguous.
-
-A generation-2 CANDIDATE will supersede this record before activation.
+Generation 2 was created inert and did not read the repo. Full repo re-ground happens only after a durable ACTIVE transition and after the multi-project Terminal-session authority blocker is resolved and proven.

@@ -13,6 +13,14 @@ After generation-1 Jefa candidate `6abaab6d-dc38-83ed-ada4-8f14f0aafc4e` had bee
 
 The edit was factually correct, but no operational writer was authorized for this project. Terminal MCP audit records the exact command at 2026-09-28T18:05:17Z. The same Terminal session subsequently contains π-core Supervisor test activity, so conversation-level attribution is not sufficiently strong to claim which ChatGPT conversation issued the write.
 
+### Unexpected write 2
+
+After generation-1 retirement work had begun, another ChatGPT-originated sequence reused Terminal sessions opened during Architect work, inspected upstream, then edited `PROJECT-BOOTSTRAP.md` and `.pi/GOAL.md` and committed/pushed:
+
+`4689f47a chore(pi): make OpenCLI upstream freshness mandatory`
+
+The content is useful, but the write was again unauthorized for OpenCLI. It is preserved as evidence.
+
 ### Meaning
 
 The demonstrated defect is authority isolation, not content correctness.
